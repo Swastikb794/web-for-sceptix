@@ -8,7 +8,9 @@ import Sidebar from "./components/sidenav/sidebar.jsx";
 import Members from "./components/sidenav/Members.jsx";
 import AboutUs from "./components/About/about.jsx";
 import EventPage from './components/Events/events.jsx'
-
+import Footer from "./components/footer/footer.jsx";
+import styled from "styled-components";
+import { ThemeProvider } from "styled-components";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,6 +27,7 @@ function App() {
           <Route path="/members" element={<TeamPage/>} />
          
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
